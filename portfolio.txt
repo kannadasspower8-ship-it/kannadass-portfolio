@@ -1,0 +1,59 @@
+# Ultimate AI Web Developer Portfolio Prompt
+
+Create a world-class, premium, and futuristic AI Web Developer Portfolio. The website must feel like a high-end operating system or a cinematic sci-fi interface.
+
+## Tech Stack
+- Framework: Next.js 15 (App Router)
+- Language: TypeScript
+- Styling: Tailwind CSS
+- Animation: Framer Motion (Highly optimized with `transform-gpu` and `will-change` for 60fps on low-end mobile devices)
+- Icons: Lucide React
+
+## Design System & Aesthetics
+- Theme: Ultra-premium dark mode (Deep space/Cyberpunk aesthetic).
+- Colors: Dominant deep blacks (`#030712`), bright cyan (`#06b6d4`), electric blue (`#2563eb`), and deep purple (`#9333ea`) accents.
+- Effects: Heavy use of Glassmorphism (`backdrop-blur`), glowing neon orbs, subtle CRT scanlines, and floating particle background systems.
+- Typography: Clean, modern, monospaced tech fonts mixed with bold, cinematic sans-serif headers.
+
+## Core Features & Components
+
+1. Initial Loading Sequence (KANNADASS_OS):
+   - A fake "boot-up" sequence simulating an AI system starting.
+   - A large, perfectly clear holographic avatar of the user with a scanning cyan laser line, hologram tint, and "BIOMETRIC_AUTH_IN_PROGRESS" pulsing text.
+   - Terminal logs scrolling rapidly before the main website reveals itself.
+
+2. Global Background System:
+   - A fixed, non-scrolling background component underlying the entire site.
+   - 40 floating, hardware-accelerated glowing particles moving randomly upwards.
+   - 3 massive glowing colored orbs (Cyan, Blue, Purple) positioned at different corners that slowly pulse and scale.
+   - A subtle dotted grid overlay spanning the whole background.
+
+3. Hero Section:
+   - Left side: Massive cinematic typography announcing "KANNADASS T", "AI Web Developer". Includes a dynamic typing effect and "Available for Hire" glowing badge.
+   - Right side: A futuristic Glass Panel "Profile Card" Widget. Displays a large, high-quality user avatar with a cyberpunk bottom-fade gradient. Underneath the photo, display live-looking stats: 99 Lighthouse Score, Top 3 Local SEO Rank, and System Ready status.
+   - Fully responsive: Mobile view uses a specific `aspect-[3/4]` to prevent cropping of the profile card.
+
+4. Skills Galaxy:
+   - A visually dense grid of tech stack icons (React, Next.js, Node, Python, etc.).
+   - Interactive hover states that trigger glowing drop-shadows and subtle scaling using magnetic physics.
+
+5. Project Universe:
+   - A stunning showcase of recent projects using a CSS Grid layout.
+   - Image cards with glassmorphism overlays and gradient borders.
+   - Projects include: "Roxy Interior Design", "Thangaraj Catering", "Irish Interior", and "Dance Studio".
+
+6. Transformation Lab:
+   - An interactive "Before & After" or "Problem vs Solution" showcase.
+   - Demonstrates how complex business problems are solved with AI-driven web code.
+
+7. Workflow Engine & Experience Timeline:
+   - A vertical scrolling timeline that tracks professional milestones and the exact step-by-step process of how projects are built (from Discovery to Deployment).
+
+8. Contact Portal:
+   - A futuristic, glowing contact form built inside a heavy glass panel.
+   - Magnetic glowing submit button.
+   - Direct links to GitHub and LinkedIn.
+
+## Strict Performance Rules
+- Do NOT remove any animations for mobile devices. 
+- Instead of simplifying the design for mobile, use `transform-gpu` and hardware acceleration (`willChange: "transform, opacity"`) to offload the heavy blur and particle rendering to the device's Graphics Chip, ensuring a smooth 60 FPS experience on all devices.
