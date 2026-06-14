@@ -21,10 +21,11 @@ export function GlobalBackground() {
             {Array.from({ length: 40 }).map((_, i) => (
               <motion.div
                 key={i}
-                className="absolute w-1 h-1 bg-cyan-500 rounded-full"
+                className="absolute w-1 h-1 bg-cyan-500 rounded-full transform-gpu"
                 style={{
                   left: `${Math.random() * 100}%`,
-                  top: `${Math.random() * 100}%`
+                  top: `${Math.random() * 100}%`,
+                  willChange: "transform, opacity"
                 }}
                 animate={{
                   y: [0, Math.random() * -150 - 50],
@@ -43,17 +44,20 @@ export function GlobalBackground() {
           <motion.div 
             animate={{ scale: [1, 1.2, 1], opacity: [0.15, 0.3, 0.15] }} 
             transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute top-[10%] right-[10%] w-[35rem] h-[35rem] bg-cyan-600/20 rounded-full blur-[150px]"
+            style={{ willChange: "transform, opacity" }}
+            className="absolute top-[10%] right-[10%] w-[35rem] h-[35rem] bg-cyan-600/20 rounded-full blur-[150px] transform-gpu"
           />
           <motion.div 
             animate={{ scale: [1, 1.5, 1], opacity: [0.1, 0.2, 0.1] }} 
             transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-            className="absolute bottom-[20%] left-[5%] w-[30rem] h-[30rem] bg-blue-600/10 rounded-full blur-[120px]"
+            style={{ willChange: "transform, opacity" }}
+            className="absolute bottom-[20%] left-[5%] w-[30rem] h-[30rem] bg-blue-600/10 rounded-full blur-[120px] transform-gpu"
           />
           <motion.div 
             animate={{ scale: [1, 1.3, 1], opacity: [0.1, 0.2, 0.1] }} 
             transition={{ duration: 14, repeat: Infinity, ease: "easeInOut", delay: 5 }}
-            className="absolute top-[60%] right-[20%] w-[25rem] h-[25rem] bg-purple-600/10 rounded-full blur-[120px]"
+            style={{ willChange: "transform, opacity" }}
+            className="absolute top-[60%] right-[20%] w-[25rem] h-[25rem] bg-purple-600/10 rounded-full blur-[120px] transform-gpu"
           />
         </>
       )}
